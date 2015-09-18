@@ -1,0 +1,2 @@
+Tiens, un nouveau! Mais dit moi nous ne nous connaissons pas.\nQuel est ton nom ? : 
+A l’aventure !
