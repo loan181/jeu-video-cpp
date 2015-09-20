@@ -3,6 +3,7 @@
 #include <cstdlib> // Permet de vider le Terminal
 #include <string> // Pour lecture de fichiers
 #include "Personnage.hpp"
+#include "Field.hpp"
 
 
 using namespace std;
@@ -10,6 +11,8 @@ using namespace std;
 void clearTerminal(void);
 bool isEmpty(ifstream &);
 void initiateGame(void);
+void startGame(void);
+
 
 void clearTerminal(void)
 {
@@ -31,7 +34,8 @@ void initiateGame(void)
 	
 	Personnage heros = Personnage();
 	heros.setName(name);
-	cout << heros.getName();
+	clearTerminal();
+	startGame();
 }
 
 /* Vérifie la présences des fichiers de sauvegardes */
@@ -39,7 +43,7 @@ void checkInfo(void)
 {
 	string line;
 	ifstream file("info.txt");
-	if (file.is_open())
+	if (0)//(file.is_open())
 	{
 		cout << "pas vide";
 		file.close();
@@ -54,6 +58,16 @@ void checkInfo(void)
   		initiateGame();
 	}
 }
+
+void startGame(void)
+{
+	cout << "- Zzzzzzz..." << endl << "Zzzzzzz..." << endl;
+	cout << "- DEBOUT C'EST L'HEURE! J'ai besoin de toi en plus." << endl;
+	cout << "- Quoi déjà? Bon okay" << endl;
+	Field chambre = Field(6,4);
+	chambre.printField();
+}
+
 
 int main(void)
 {

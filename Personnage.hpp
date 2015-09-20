@@ -4,11 +4,11 @@
 class Personnage
 {
 public:
-	Personnage(void);
-	void set_name(string name) {_name = name;};
-	string get_name(void) {return _name;}
+	Personnage(void) {};
+	void setName(std::string str) {_name=str;}
 private:
-	string _name;
+	std::string _name;
+	int money=0;//,xp=0,max_hp=10,hp=max_hp,strength=1,attack=1,defense=1;
 };
 
 #endif
