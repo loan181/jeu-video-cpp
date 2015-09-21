@@ -2,7 +2,6 @@
 
 ### Remarque préliminaire:
 Les chapitres suivant seront strucutré de la manière suivante:
-This is arbitrary text, an unordered list begins on the next line.
   - _Titre_
   - _Explications et syntaxe_
   - _Structure_
