@@ -17,7 +17,7 @@ Par exemple la structure suivante : `(Bonjour. )J'aime les petits chats( noirs).
 L'utilisation des points de suspenssions `...` signifie la potentielle répétition de la dernière séquence autant de fois que souhaité.
 
 ### Textes de base:
-Chaque texte du jeu seras d'abord marqué par une chaine de caractère _lab_ qui seras utiliser comme label du texte. Le label comportera un seul mot (potentiellement séparé par des '_'),dois être UNIQUE pour le fichier de texte courant et ne PAS utiliser les autres caractères de conventions (`:`, `{`, `}`, `|`, `[`, `]`, `$`, `~`).  
+Chaque texte du jeu seras d'abord marqué par une chaine de caractère _lab_ qui seras utiliser comme label du texte. Le label comportera un seul mot (potentiellement séparé par des '_'), dois être UNIQUE pour le fichier de texte courant et ne PAS utiliser les autres caractères de conventions (`:`, `{`, `}`, `|`, `[`, `]`, `$`, `~`).  
 Le label sera suivi de `:` indiquant sa fin. Puis le texte (chaine de caractère).
 
 Stucture: `lab:texte`.  
@@ -44,7 +44,7 @@ Structure: `lab:texte[lab_d'arrivée]`
 Exemple: 
 ```
 embranchement:Un embranchement s'offrai à moi, ou dois-je aller? {A gauche[cul_de_sac]|A droite[embranchement_droite]|En avant[cul_de_sac]}
-embranchement_gauche: Oh, Un loup! A l'attaque![Attaque_loup]
+embranchement_droite: Oh, Un loup! A l'attaque![Attaque_loup]
 cul_de_sac: Rien par ici... Demi-tour[embranchement]
 ```
 
